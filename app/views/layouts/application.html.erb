@@ -17,11 +17,6 @@
         <%= link_to root_path, class: "brand" do %>
           <div class='brand-name'><%= brand_title %></div>
         <% end %>
-        <nav>
-          <%= link_to "Games", root_path %>
-          <%= link_to "Players", players_path %>
-          <%= link_to "New Game", new_game_path, class: "btn btn-primary" %>
-        </nav>
       </header>
       <div id='main'>
         <%= yield %>
