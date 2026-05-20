@@ -1,4 +1,5 @@
-FROM timbru31/ruby-node:3.2
+ARG RUBY_VERSION=3.2.11
+FROM ruby:$RUBY_VERSION
 
 RUN apt-get update -qq && apt-get install -y postgresql-client
 
